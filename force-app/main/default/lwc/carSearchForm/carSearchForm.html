@@ -1,0 +1,10 @@
+<template>
+    <lightning-layout class="slds-box slds-box_xx-small">
+    <lightning-layout-item padding="hornizontal-small">
+        <lightning-combobox name="carTypes" label="Car Types" placeholder="All types" value={selectedValue} onchange={handleCarTypeChange} variant="label-hidden" options={carTypes} style="width:200px"></lightning-combobox>
+    </lightning-layout-item>
+    <lightning-layout-item padding="hornizontal-small">
+        <lightning-button label="New" onclick={createNewCarType} ></lightning-button>
+    </lightning-layout-item>
+</lightning-layout>
+</template>
